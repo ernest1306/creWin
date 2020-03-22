@@ -1,77 +1,75 @@
-body{
+body {
     background-color: #f5f5f5;
 }
-.navbar{
+
+.navbar {
     background-color: white!important;
     font-size: large;
 }
 
-.searchBar{
-    background-color: #ddd;
+.searchBar {
+    background-color: rgb(186, 223, 245);
     border-radius: 15px;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
 }
 
-.searchField{
+.searchField {
     border-width: 0!important;
     border-color: white;
-/*     border-top-right-radius: 0;
-    border-bottom-right-radius: 0; */
-
 }
-.searchButton{
+
+.searchButton {
     font-weight: 400;
     font-size: 16;
     border-radius: 5px;
 }
 
-.filterBar{
-    background-color: #d3d3d3;
+.filterBar {
+    background-color: rgb(215, 236, 248);
     border-radius: 15px;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
 }
 
-.filterBar h4{
+.filterBar h4 {
     font-weight: 300;
 }
 
-.filterButton{
-    border:none;
+.filterButton {
+    border: none;
     background-color: #f3f3f3;
     font-weight: 400;
     font-size: 16;
     border-radius: 5px;
 }
 
-.filterSentence{
+.filterSentence {
     word-spacing: 1;
     letter-spacing: 0;
 }
 
-.vesselName{
+.vesselName {
     text-decoration: underline;
     letter-spacing: 2;
     font-weight: 400;
     color: #0979d4;
 }
 
-.vesselType{
+.vesselType {
     text-decoration: underline;
     letter-spacing: 2;
     font-weight: 400;
     color: #0979d4;
 }
 
-.resultList{
+.resultList {
     background-color: #ddd;
     border-radius: 15px;
-
 }
 
-.resultCard{
-    border-radius: 15px; 
+.resultCard {
+    border-radius: 15px;
 }
 
 .center {
@@ -80,8 +78,99 @@ body{
     margin-right: auto;
 }
 
-.value{
+.value {
     letter-spacing: 1;
     margin-left: 5;
     font-weight: 400;
+}
+
+.animate {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.info-card {
+    width: 100%;
+    border: 1px solid rgb(215, 215, 215);
+    position: relative;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.info-card>img {
+    width: 100px;
+    margin-bottom: 60px;
+}
+
+.info-card .info-card-details,
+.info-card .info-card-details .info-card-header {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    padding: 0 15px;
+    background: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.info-card .info-card-details::-webkit-scrollbar {
+    width: 8px;
+}
+
+.info-card .info-card-details::-webkit-scrollbar-button {
+    width: 8px;
+    height: 0px;
+}
+
+.info-card .info-card-details::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.info-card .info-card-details::-webkit-scrollbar-thumb {
+    background: rgb(160, 160, 160);
+}
+
+.info-card .info-card-details::-webkit-scrollbar-thumb:hover {
+    background: rgb(130, 130, 130);
+}
+
+.info-card .info-card-details .info-card-header {
+    height: auto;
+    bottom: 100%;
+    padding: 10px 5px;
+}
+
+.info-card:hover .info-card-details {
+    bottom: 0px;
+    overflow: auto;
+    padding-bottom: 10px;
+}
+
+.info-card:hover .info-card-details .info-card-header {
+    position: relative;
+    bottom: 0px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.info-card .info-card-details .info-card-header h1,
+.info-card .info-card-details .info-card-header h3 {
+    color: rgb(62, 62, 62);
+    font-size: 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.info-card .info-card-details .info-card-header h3 {
+    color: #0979d4;
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 5px;
 }

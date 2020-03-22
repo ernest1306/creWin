@@ -5,6 +5,7 @@
 
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="style.css">
+    <title>creWin - Search Vessel</title>
 
 </head>
 
@@ -13,8 +14,7 @@
         <a class="navbar-brand" href="#">
             <img src="logo.png" width="140" height="50" alt="">
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -24,6 +24,16 @@
                 <a class="nav-item nav-link px-3" href="#">For Employers</a>
                 <a class="nav-item nav-link px-3" href="#">About</a>
                 <a class="nav-item nav-link px-3" href="#">Contact</a>
+
+            </div>
+            <div class="navbar-nav ml-auto">
+                <div class="py-1">
+                    <img src="https://placeimg.com/50/50/animals" class="img profileImage mx-2" alt="" style="border-radius: 100px;">
+                    <span class="lead" style="letter-spacing: 1;">
+                        ALITAS SHIPPING
+                    </span>
+                </div>
+
             </div>
         </div>
     </nav>
@@ -33,12 +43,12 @@
             <div class="input-group col-12 col-sm-6 my-1">
                 <input type="text" class="form-control searchField" placeholder="Vessel Name">
                 <div class="input-group-append">
-                    <button class="btn btn-outline-dark filterButton" type="button" data-toggle="modal"
-                        data-target="#staticBackdrop"><i class="fa fa-filter mr-1" aria-hidden="true"></i>FILTER</button>
+                    <button class="btn btn-outline-dark filterButton" type="button" data-toggle="modal" data-target="#staticBackdrop"><i class="fa fa-filter mr-1"
+                            aria-hidden="true"></i>FILTER</button>
                 </div>
             </div>
-            <button type="button"
-                class="btn btn-primary btn searchButton mx-3 col-md-2 col-lg-2 col-xl-2 my-1"><i class="fa fa-search mr-1" aria-hidden="true"></i>SEARCH</button>
+            <button type="button" class="btn btn-primary btn searchButton mx-3 col-sm-3 col-md-2 col-lg-2 col-xl-2 my-1"><i
+                    class="fa fa-search mr-1" aria-hidden="true"></i>SEARCH</button>
         </div>
     </div>
     <div class="container col-11 col-lg-10 pt-2 filterBar">
@@ -46,161 +56,322 @@
             <p class="lead col-12 filterSentence">You searched for vessels named <span class="vesselName">Costa
                     Concordia</span>, with the type/s <span class="vesselType">LNG, Cruise</span></p>
         </div>
+        <div class="row">
+            <p class="lead col-12 filterSentence" style="font-size: 12; text-align: right;">*can't find the vessel you want? <button type="button" class="btn btn-outline-primary btn-sm searchButton" style="font-size: 12;"><i class="fa fa-plus mr-1" aria-hidden="true"></i>ADD VESSEL</button>
+            </p>
+        </div>
+
     </div>
-    <br>
-    <div class="container col-11 col-lg-8 resultList py-1">
-        <div class="card col-12 col-lg-12 center my-2 resultCard">
-            <div class="card-body">
-                <div class="row">
-                    <div class="col-12 col-md-4">
-                        <img src="https://placeimg.com/640/480/any" alt="..." class="img-thumbnail">
-                    </div>
-                    <div class="col-12 col-md-8 my-2">
-                        <p class="lead my-0">
-                            <span>Vessel:</span><span class="value" style="float: right;"> HAYDAR</span>
-                        </p>
-                        <hr style="margin-top:0; margin-bottom: 0;">
-                        <p class="lead my-0" style="background-color: #f4f4f4;">
-                            <span>IMO:</span><span class="value" style="float: right;"> 9259276</span>
-                        </p>
-                        <hr style="margin-top:0; margin-bottom: 0;">
+    <hr>
+    <div class="container">
+        <div class="row">
+            <div class=" col-sm-6 col-md-offset-2 col-md-4 ">
+                <div class=" info-card ">
+                    <img style="width: 100%" src="https://placeimg.com/500/500/arch" />
+                    <div class="  info-card-details   animate">
+                        <div class="  info-card-header  ">
+                            <h1> HAYDAR </h1>
+                            <h3> IMO: 9259276 </h3>
+                        </div>
+                        <div class="  info-card-detail  ">
 
-                        <p class="lead my-0">
+                            <hr style="margin-top:0; margin-bottom: 0;">
 
-                            <span>MMSI:</span><span class="value" style="float: right;"> 77662732288</span>
-                        </p>
-                        <hr style="margin-top:0; margin-bottom: 0;">
+                            <p class="lead my-0">
 
-                        <p class="lead my-0" style="background-color: #f4f4f4;">
+                                <span>MMSI:</span><span class="value"> 77662732288</span>
+                            </p>
+                            <hr style="margin-top:0; margin-bottom: 0;">
 
-                            <span>Built:</span><span class="value" style="float: right;"> 2016</span>
-                        </p>
-                        <hr style="margin-top:0; margin-bottom: 0;">
+                            <p class="lead my-0" style="background-color: rgb(233, 233, 233);">
 
-                        <p class="lead my-0">
+                                <span>Built:</span><span class="value"> 2016</span>
+                            </p>
+                            <hr style="margin-top:0; margin-bottom: 0;">
 
-                            <span>Type:</span><span class="value" style="float: right;"> LNG</span>
-                        </p>
-                        <hr style="margin-top:0; margin-bottom: 0;">
+                            <p class="lead my-0">
 
-                        <p class="lead my-0" style="background-color: #f4f4f4;">
+                                <span>Type:</span><span class="value"> LNG</span>
+                            </p>
+                            <hr style="margin-top:0; margin-bottom: 0;">
 
-                            <span>Machine:</span><span class="value" style="float: right;"> MAN</span>
-                        </p>
-                        <hr style="margin-top:0; margin-bottom: 0;">
+                            <p class="lead my-0" style="background-color:  rgb(233, 233, 233);">
 
-                        <p class="lead my-0">
+                                <span>Machine:</span><span class="value"> MAN</span>
+                            </p>
+                            <hr style="margin-top:0; margin-bottom: 0;">
 
-                            <span>GRT:</span><span class="value" style="float: right;"> 90835</span>
-                        </p>
-                        <hr style="margin-top:0; margin-bottom: 0;">
+                            <p class="lead my-0">
 
-                        <p class="lead my-0" style="background-color: #f4f4f4;">
+                                <span>GRT:</span><span class="value"> 90835</span>
+                            </p>
+                            <hr style="margin-top:0; margin-bottom: 0;">
 
-                            <span>GWT:</span><span class="value" style="float: right;"> 15000</span>
-                        </p>
-                        <hr style="margin-top:0; margin-bottom: 0;">
+                            <p class="lead my-0" style="background-color:  rgb(233, 233, 233);">
 
-                        <p class="lead my-0">
+                                <span>GWT:</span><span class="value"> 15000</span>
+                            </p>
+                            <hr style="margin-top:0; margin-bottom: 0;">
 
-                            <span>Flag:</span><span class="value" style="float: right;"> </span>
-                        </p>
-                        <hr style="margin-top:0; margin-bottom: 0;">
+                            <p class="lead my-0">
 
-                        <p class="lead my-0" style="background-color: #f4f4f4;">
+                                <span>Flag:</span><span class="value"> </span>
+                            </p>
+                            <hr style="margin-top:0; margin-bottom: 0;">
 
-                            <span>Port:</span><span class="value" style="float: right;"> IZMIR</span>
-                        </p>
+                            <p class="lead my-0" style="background-color:  rgb(233, 233, 233);">
 
-                    </div>
-                </div>
-                <a name="" id="" class="btn btn-primary searchButton" href="#" style="float: right;" role="button"><i class="fa fa-pencil-square-o mr-1" aria-hidden="true"></i>EDIT VESSEL</a>
-            </div>
-        </div>
-        <hr>
-        <div class="card col-12 col-lg-12 center my-2 resultCard">
-            <div class="card-body">
-                <div class="row">
-                    <div class="col-12 col-md-4">
-                        <img src="https://placeimg.com/640/480/any" alt="..." class="img-thumbnail">
-                    </div>
-                    <div class="col-12 col-md-8">
-                        <p class="lead my-0">
-                            <span>Vessel:</span><span class="value"> HAYDAR</span>
-                        </p>
-                        <p class="lead my-0">
-                            <span>IMO:</span><span class="value"> 9259276</span>
-                        </p>
-                        <p class="lead my-0">
+                                <span>Port:</span><span class="value"> IZMIR</span>
+                            </p>
+                            <a name="" id="" class="btn btn-outline-primary searchButton mt-2" href="#" role="button"><i
+                                    class="fa fa-pencil-square-o mr-1" aria-hidden="true"></i>EDIT VESSEL</a>
 
-                            <span>MMSI:</span><span class="value"> 77662732288</span>
-                        </p>
-                        <p class="lead my-0">
 
-                            <span>Built:</span><span class="value"> 2016</span>
-                        </p>
-                        <p class="lead my-0">
-
-                            <span>Type:</span><span class="value"> LNG</span>
-                        </p>
-                        <p class="lead my-0">
-
-                            <span>Machine:</span><span class="value"> MAN</span>
-                        </p>
-                        <p class="lead my-0">
-
-                            <span>GRT:</span><span class="value"> 90835</span>
-                        </p>
-                        <p class="lead my-0">
-
-                            <span>GWT:</span><span class="value"> 15000</span>
-                        </p>
-                        <p class="lead my-0">
-
-                            <span>Flag:</span><span class="value"> </span>
-                        </p>
-                        <p class="lead my-0">
-
-                            <span>Port:</span><span class="value"> IZMIR</span>
-                        </p>
-
+                        </div>
                     </div>
                 </div>
-                <a name="" id="" class="btn btn-primary searchButton" href="#" style="float: right;" role="button"><i class="fa fa-pencil-square-o mr-1" aria-hidden="true"></i> EDIT VESSEL</a>
+
+            </div>
+            <div class=" col-sm-6 col-md-offset-2 col-md-4 ">
+                <div class=" info-card ">
+                    <img style="width: 100%" src="https://placeimg.com/500/500/tech" />
+                    <div class="  info-card-details   animate">
+                        <div class="  info-card-header  ">
+                            <h1> HAYDAR </h1>
+                            <h3> IMO: 9259276 </h3>
+                        </div>
+                        <div class="  info-card-detail  ">
+
+                            <hr style="margin-top:0; margin-bottom: 0;">
+
+                            <p class="lead my-0">
+
+                                <span>MMSI:</span><span class="value"> 77662732288</span>
+                            </p>
+                            <hr style="margin-top:0; margin-bottom: 0;">
+
+                            <p class="lead my-0" style="background-color:  rgb(233, 233, 233);">
+
+                                <span>Built:</span><span class="value"> 2016</span>
+                            </p>
+                            <hr style="margin-top:0; margin-bottom: 0;">
+
+                            <p class="lead my-0">
+
+                                <span>Type:</span><span class="value"> LNG</span>
+                            </p>
+                            <hr style="margin-top:0; margin-bottom: 0;">
+
+                            <p class="lead my-0" style="background-color:  rgb(233, 233, 233);">
+
+                                <span>Machine:</span><span class="value"> MAN</span>
+                            </p>
+                            <hr style="margin-top:0; margin-bottom: 0;">
+
+                            <p class="lead my-0">
+
+                                <span>GRT:</span><span class="value"> 90835</span>
+                            </p>
+                            <hr style="margin-top:0; margin-bottom: 0;">
+
+                            <p class="lead my-0" style="background-color:  rgb(233, 233, 233);">
+
+                                <span>GWT:</span><span class="value"> 15000</span>
+                            </p>
+                            <hr style="margin-top:0; margin-bottom: 0;">
+
+                            <p class="lead my-0">
+
+                                <span>Flag:</span><span class="value"> </span>
+                            </p>
+                            <hr style="margin-top:0; margin-bottom: 0;">
+
+                            <p class="lead my-0" style="background-color:  rgb(233, 233, 233);">
+
+                                <span>Port:</span><span class="value"> IZMIR</span>
+                            </p>
+                            <a name="" id="" class="btn btn-outline-primary searchButton mt-2" href="#" role="button"><i
+                                    class="fa fa-pencil-square-o mr-1" aria-hidden="true"></i>EDIT VESSEL</a>
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class=" col-sm-6 col-md-offset-2 col-md-4 ">
+                <div class=" info-card ">
+                    <img style="width: 100%" src="https://placeimg.com/500/500/nature" />
+                    <div class="  info-card-details   animate">
+                        <div class="  info-card-header  ">
+                            <h1> HAYDAR </h1>
+                            <h3> IMO: 9259276 </h3>
+                        </div>
+                        <div class="  info-card-detail  ">
+
+                            <hr style="margin-top:0; margin-bottom: 0;">
+
+                            <p class="lead my-0">
+
+                                <span>MMSI:</span><span class="value"> 77662732288</span>
+                            </p>
+                            <hr style="margin-top:0; margin-bottom: 0;">
+
+                            <p class="lead my-0" style="background-color:  rgb(233, 233, 233);">
+
+                                <span>Built:</span><span class="value"> 2016</span>
+                            </p>
+                            <hr style="margin-top:0; margin-bottom: 0;">
+
+                            <p class="lead my-0">
+
+                                <span>Type:</span><span class="value"> LNG</span>
+                            </p>
+                            <hr style="margin-top:0; margin-bottom: 0;">
+
+                            <p class="lead my-0" style="background-color:  rgb(233, 233, 233);">
+
+                                <span>Machine:</span><span class="value"> MAN</span>
+                            </p>
+                            <hr style="margin-top:0; margin-bottom: 0;">
+
+                            <p class="lead my-0">
+
+                                <span>GRT:</span><span class="value"> 90835</span>
+                            </p>
+                            <hr style="margin-top:0; margin-bottom: 0;">
+
+                            <p class="lead my-0" style="background-color:  rgb(233, 233, 233);">
+
+                                <span>GWT:</span><span class="value"> 15000</span>
+                            </p>
+                            <hr style="margin-top:0; margin-bottom: 0;">
+
+                            <p class="lead my-0">
+
+                                <span>Flag:</span><span class="value"> </span>
+                            </p>
+                            <hr style="margin-top:0; margin-bottom: 0;">
+
+                            <p class="lead my-0" style="background-color:  rgb(233, 233, 233);">
+
+                                <span>Port:</span><span class="value"> IZMIR</span>
+                            </p>
+                            <a name="" id="" class="btn btn-outline-primary searchButton mt-2" href="#" role="button"><i
+                                    class="fa fa-pencil-square-o mr-1" aria-hidden="true"></i>EDIT VESSEL</a>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class=" col-sm-6 col-md-offset-2 col-md-4 ">
+                <div class=" info-card ">
+                    <img style="width: 100%" src="https://placeimg.com/500/500/animals" />
+                    <div class="  info-card-details   animate">
+                        <div class="  info-card-header  ">
+                            <h1> HAYDAR </h1>
+                            <h3> IMO: 9259276 </h3>
+                        </div>
+                        <div class="  info-card-detail  ">
+
+                            <hr style="margin-top:0; margin-bottom: 0;">
+
+                            <p class="lead my-0">
+
+                                <span>MMSI:</span><span class="value"> 77662732288</span>
+                            </p>
+                            <hr style="margin-top:0; margin-bottom: 0;">
+
+                            <p class="lead my-0" style="background-color:  rgb(233, 233, 233);">
+
+                                <span>Built:</span><span class="value"> 2016</span>
+                            </p>
+                            <hr style="margin-top:0; margin-bottom: 0;">
+
+                            <p class="lead my-0">
+
+                                <span>Type:</span><span class="value"> LNG</span>
+                            </p>
+                            <hr style="margin-top:0; margin-bottom: 0;">
+
+                            <p class="lead my-0" style="background-color:  rgb(233, 233, 233);">
+
+                                <span>Machine:</span><span class="value"> MAN</span>
+                            </p>
+                            <hr style="margin-top:0; margin-bottom: 0;">
+
+                            <p class="lead my-0">
+
+                                <span>GRT:</span><span class="value"> 90835</span>
+                            </p>
+                            <hr style="margin-top:0; margin-bottom: 0;">
+
+                            <p class="lead my-0" style="background-color:  rgb(233, 233, 233);">
+
+                                <span>GWT:</span><span class="value"> 15000</span>
+                            </p>
+                            <hr style="margin-top:0; margin-bottom: 0;">
+
+                            <p class="lead my-0">
+
+                                <span>Flag:</span><span class="value"> </span>
+                            </p>
+                            <hr style="margin-top:0; margin-bottom: 0;">
+
+                            <p class="lead my-0" style="background-color:  rgb(233, 233, 233);">
+
+                                <span>Port:</span><span class="value"> IZMIR</span>
+                            </p>
+                            <a name="" id="" class="btn btn-outline-primary searchButton mt-2" href="#" role="button"><i
+                                    class="fa fa-pencil-square-o mr-1" aria-hidden="true"></i>EDIT VESSEL</a>
+
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
-        <nav aria-label="Page navigation example">
-            <ul class="pagination justify-content-center">
-                <li class="page-item">
-                    <a class="page-link" href="#" aria-label="Previous">
-                        <span aria-hidden="true">&laquo;</span>
-                    </a>
-                </li>
-                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item">
-                    <a class="page-link" href="#" aria-label="Next">
-                        <span aria-hidden="true">&raquo;</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
+
+    </div>
+    <hr>
+    <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">«</span>
+                </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">»</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
     </div>
     <div class="footer mt-4" style="background-color: white;">
         <div class="row">
-            <p class="lead center py-2" style="margin: auto!important; text-align: center;">
-                Ernest Jusuf <br> hopefully front-end developer at creWin
+            <p class="lead center py-2" style="margin: auto!important; text-align: center; letter-spacing: 1;">
+                Ernest Jusuf <br> front-end work for <span style="color: #0b85aa;"> creWin</span>
             </p>
         </div>
     </div>
+
+
+
     <!-- Modal -->
-    <div class="modal fade" id="staticBackdrop" data-backdrop="static" tabindex="-1" role="dialog"
-        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal fade" id="staticBackdrop" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="staticBackdropLabel">Filter</h5>
+                    <h5 class="modal-title" id="staticBackdropLabel">VESSEL TYPE</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -210,7 +381,6 @@
                     <div class="container">
                         <div>
 
-                            <h4 class="">Vessel Type:</h4>
                         </div>
 
                         <div class="form-check form-check mx-2">
@@ -248,14 +418,8 @@
     </div>
 </body>
 
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-    crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-    crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
 </html>
